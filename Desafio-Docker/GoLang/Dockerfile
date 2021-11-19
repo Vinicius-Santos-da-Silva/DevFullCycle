@@ -24,3 +24,7 @@ CMD ["/app/go-sample-app"]
 
 # docker build . -f Dockerfile -t vsantos98/golang-2mb
 # docker run vsantos98/golang-2mb
+
+
+# docker build . -f Dockerfile -t vsantos98/codeeducation
+# docker run vsantos98/codeeducation
