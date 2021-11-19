@@ -1,0 +1,16 @@
+FROM node:15
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+EXPOSE 3000
+
+CMD [ "node" , "index.js"]
+# docker run --rm -it -v ${pwd}/:/usr/src/app -p 3000:3000 node:15 bash 
+
+#Prod
+#docker build -t vsantos98/nodejs . -f Dockerfile.prod 
+
+# Dev
+#docker build -t vsantos98/nodejs .

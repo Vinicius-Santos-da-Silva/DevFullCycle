@@ -1,0 +1,31 @@
+version: '3'
+
+services: 
+  app_node:
+    image: vsantos98/nodejs-with-nginx:prod
+    container_name: nodejs
+    networks: 
+      - node-nginx-network
+    volumes: 
+      - ./node:/usr/src/app
+    ports: 
+      - "3000:3000"
+
+  nginx_nodejs:
+    image: vsantos98/nginx-with-nodejs:prod
+    container_name: nginx_nodejs
+    networks: 
+      - node-nginx-network
+    ports: 
+      - "8080:80"
+    depends_on:
+      - app_node
+
+
+
+
+    
+
+networks: 
+  node-nginx-network:
+    driver: bridge     

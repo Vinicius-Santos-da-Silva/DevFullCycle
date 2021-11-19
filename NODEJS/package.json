@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-with-docker-vsantos98",
+  "version": "1.0.0",
+  "description": "Project NodeJS with Docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinícius Santos da Silva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
